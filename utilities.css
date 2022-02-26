@@ -1,0 +1,81 @@
+:root{
+    --secondary:#3d2514;
+    --pure:#ffffff;
+    --primary:#ffc045;
+    --danger:#bf2222;
+    --dark:#000;
+}
+
+@font-face {
+    font-family:"Heading" ;
+    src: url(../fonts/AlfaSlabOne-Regular.ttf);
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-1{
+    flex: 1;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.btn{
+padding: 0.75rem 0.75rem;
+border-radius: 4px;
+line-height: 0.8;
+font-size: 1.2rem;
+cursor: pointer;
+transition: all 0.3s ease;
+border: 1px solid transparent;
+}
+
+.btn-primary{
+background: var(--primary);
+color: var(--heaven);
+}
+
+.btn-primary:hover{
+    background: var(--pure);
+    color: var(--dark);
+    border: 2px solid var(--primary); 
+}
+
+.btn-secondary{
+    background: var(--danger);
+    color: var(--pure);
+}
+
+.btn-secondary:hover{
+    background: var(--pure);
+    color: var(--dark);
+    border: 2px solid var(--danger); 
+}
